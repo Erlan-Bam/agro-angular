@@ -1,0 +1,17 @@
+@import "@shared/styles/breakpoints.scss";
+@import "@shared/styles/mixins.scss";
+
+.mob {
+  display: block;
+
+  @include respond-to("tablet_sm") {
+    display: none;
+  }
+}
+.pc {
+  display: none;
+
+  @include respond-to("tablet_sm") {
+    display: block;
+  }
+}
