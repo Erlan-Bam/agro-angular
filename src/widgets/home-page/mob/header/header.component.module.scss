@@ -1,0 +1,38 @@
+.header {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__burger {
+    width: clamp(20px, 40 * 100vw / 360, 80px);
+    height: clamp(20px, 40 * 100vw / 360, 80px);
+    border: none;
+    position: relative;
+    background: none;
+    cursor: pointer;
+
+    &__line {
+      position: absolute;
+      background-color: #289225;
+      border-radius: 5px;
+      width: 90%;
+      height: 5px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: transform 0.5s, width 0.5s;
+    }
+    &__line1 {
+      top: 20%;
+      transform: translate(-50%, -2px);
+    }
+    &__line {
+      top: 50%;
+    }
+    &__line3 {
+      top: 80%;
+      transform: translate(-50%, 12px);
+    }
+  }
+}
