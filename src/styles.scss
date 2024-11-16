@@ -8,3 +8,23 @@
 
   scroll-behavior: smooth;
 }
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("/assets/GothamPro/gothampro.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("/assets/GothamPro/gothampro_bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("/assets/GothamPro/gothampro_italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
