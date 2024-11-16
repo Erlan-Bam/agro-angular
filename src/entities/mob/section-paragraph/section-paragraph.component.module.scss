@@ -1,10 +1,8 @@
 @import "@shared/styles/breakpoints.scss";
 @import "@shared/styles/mixins.scss";
 
-.text {
-  @apply text-green;
+.paragraph {
   font-family: "Gotham Pro", sans-serif;
-
   font-size: clamp(8px, 16 / 320 * 100vw, 32px);
 
   @include respond-to("xxs") {

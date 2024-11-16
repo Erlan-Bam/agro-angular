@@ -4,6 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   &__burger {
     width: clamp(20px, 40 * 100vw / 360, 80px);
     height: clamp(20px, 40 * 100vw / 360, 80px);
@@ -28,6 +29,18 @@
     }
     &__line3 {
       transform: translate(-50%, 10px);
+    }
+
+    &.active {
+      .header__burger__line1 {
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+      .header__burger__line2 {
+        width: 0;
+      }
+      .header__burger__line3 {
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
     }
   }
 }

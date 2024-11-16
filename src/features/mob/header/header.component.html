@@ -1,8 +1,13 @@
 <header class="header pt-8">
   <img src="/assets/Frame 41.svg" alt="logo_mob" />
-  <div class="header__burger">
+  <div
+    class="header__burger"
+    (click)="toggleMenu()"
+    [class.active]="isMenuOpen"
+  >
     <span class="header__burger__line header__burger__line1"></span>
     <span class="header__burger__line header__burger__line2"></span>
     <span class="header__burger__line header__burger__line3"></span>
   </div>
 </header>
+<app-menu [isOpen]="isMenuOpen" />

@@ -5,7 +5,7 @@ import { Component, Input } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './section-text.component.html',
-  styleUrl: './section-text.component.scss',
+  styleUrl: './section-text.component.module.scss',
 })
 export class SectionTextComponent {
   @Input() text: string = '';
